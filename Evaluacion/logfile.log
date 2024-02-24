@@ -33,3 +33,5 @@ INSERT INTO ODONTOLOGOS(matricula, nombre, apellido) VALUES(?, ?, ?) [42104-214]
 [2024-02-23 21:01:35] [ INFO ] [OdontologoDaoH2:54] Tuvimos un problema
 [2024-02-23 21:01:35] [ ERROR] [OdontologoDaoH2:55] Table "ODONTOLOGOS" not found (this database is empty); SQL statement:
 INSERT INTO ODONTOLOGOS(matricula, nombre, apellido) VALUES(?, ?, ?) [42104-214]
+[2024-02-23 21:47:34] [ INFO ] [OdontologoDaoH2:46] Odontologo registrado: Odontologo{matricula=1234, nombre='Carlos', apellido='Perez'}
+[2024-02-23 21:56:13] [ INFO ] [OdontologoDaoH2:90] Listado de todos los Odontologos: [Odontologo{matricula=255, nombre='Lucas', apellido='Machaca'}, Odontologo{matricula=256, nombre='Jose', apellido='Pereira'}, Odontologo{matricula=257, nombre='Pepito', apellido='Perez'}, Odontologo{matricula=1234, nombre='Carlos', apellido='Perez'}]

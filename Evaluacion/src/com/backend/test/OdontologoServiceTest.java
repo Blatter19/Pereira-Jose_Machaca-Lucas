@@ -30,10 +30,11 @@ class OdontologoServiceTest {
 
     @Test
     void deberiaMostrarLaListaDeTodosLosOdontologos(){
+        odontologoService = new OdontologoService(new OdontologoDaoH2());
+        List<Odontologo> odontologos = odontologoService.listarOdontologo();
 
-        List<OdontologoServiceTest> odontologoServiceTests = new ArrayList<OdontologoServiceTest>();
 
-
+        assertFalse(odontologos.isEmpty(), "La lista de odontólogos está vacía");
     }
 
 }
