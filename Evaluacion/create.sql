@@ -1,3 +1,0 @@
-DROP TABLE IF EXISTS ODONTOLOGOS; CREATE TABLE ODONTOLOGOS(id INT AUTO_INCREMENT PRIMARY KEY, matricula INT NOT NULL, nombre VARCHAR(100) NOT NULL, apellido VARCHAR(100) NOT NULL);
-
-INSERT INTO ODONTOLOGOS(matricula, nombre, apellido) VALUES (255, 'Lucas', 'Machaca'), (256, 'Jose', 'Pereira'), (257, 'Pepito', 'Perez');

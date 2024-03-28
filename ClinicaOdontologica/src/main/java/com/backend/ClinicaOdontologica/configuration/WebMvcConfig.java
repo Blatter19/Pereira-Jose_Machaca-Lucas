@@ -9,8 +9,8 @@ public class WebMvcConfig implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
 
-        if (!registry.hasMappingForPattern("/api-docs/")) {
-            registry.addResourceHandler("/api-docs/")
+        if (!registry.hasMappingForPattern("/api-docs/**")) {
+            registry.addResourceHandler("/api-docs/**")
                     .addResourceLocations("classpath:/api/");
         }
     }

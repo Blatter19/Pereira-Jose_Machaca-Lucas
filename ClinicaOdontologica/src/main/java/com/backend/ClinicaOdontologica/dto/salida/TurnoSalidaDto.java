@@ -8,7 +8,7 @@ public class TurnoSalidaDto {
     private Long id;
     private PacienteSalidaDto pacienteSalidaDto;
     private OdontologoSalidaDto odontologoSalidaDto;
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy HH:mm")
     private LocalDateTime fechaYHora;
 
     public TurnoSalidaDto() {

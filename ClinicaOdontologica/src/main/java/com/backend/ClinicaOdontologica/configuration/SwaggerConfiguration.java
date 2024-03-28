@@ -17,14 +17,6 @@ import java.util.List;
 
 @Configuration
 public class SwaggerConfiguration {
-    @Bean
-    public Docket swagger() {
-        return new Docket(DocumentationType.SWAGGER_2)
-                .select()
-                .apis(RequestHandlerSelectors.any())
-                .paths(PathSelectors.any())
-                .build();
-    }
 
     @Primary
     @Bean
@@ -46,5 +38,14 @@ public class SwaggerConfiguration {
         wsResource.setLocation("/api-docs/" + resource + ".json");
 
         return wsResource;
+    }
+
+    @Bean
+    public Docket swagger() {
+        return new Docket(DocumentationType.SWAGGER_2)
+                .select()
+                .apis(RequestHandlerSelectors.any())
+                .paths(PathSelectors.any())
+                .build();
     }
 }
